@@ -459,6 +459,19 @@ a.book:hover { background: var(--navy); color: #fff; }
 .prose {
   max-width: 40rem;
 }
+.bio-layout {
+  display: grid;
+  grid-template-columns: minmax(12rem, 16.5rem) minmax(0, 40rem);
+  gap: 1.75rem 2.5rem;
+  align-items: start;
+}
+.bio-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
 .prose h2 {
   font-family: var(--serif);
   font-weight: 500;
@@ -496,6 +509,8 @@ a.book:hover { background: var(--navy); color: #fff; }
 @media (max-width: 860px) {
   .framework { grid-template-columns: 1fr 1fr; }
   .offers { grid-template-columns: 1fr; }
+  .bio-layout { grid-template-columns: 1fr; }
+  .bio-photo { max-width: 16.5rem; }
   .principle-grid { grid-template-columns: 1fr; justify-items: start; }
   .footer-grid { grid-template-columns: 1fr; }
 }

@@ -147,5 +147,13 @@
     <p class="legal">HR Does AI</p>
   </div>
 </footer>
+<script>
+(function () {
+  var url = location.origin + location.pathname;
+  if (url.indexOf("http") !== 0) return;
+  var img = new Image();
+  img.src = "https://librecounter.org/count?url=" + encodeURIComponent(url) + "&userAgent=" + encodeURIComponent(navigator.userAgent || "unknown");
+})();
+</script>
 </body>
 </html>
